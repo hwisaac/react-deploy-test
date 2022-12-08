@@ -1,11 +1,11 @@
 {
-  "main.js": "/react-deploy-test/static/js/main.a87fe7c8.chunk.js",
-  "main.js.map": "/react-deploy-test/static/js/main.a87fe7c8.chunk.js.map",
+  "main.js": "/react-deploy-test/static/js/main.a66bc945.chunk.js",
+  "main.js.map": "/react-deploy-test/static/js/main.a66bc945.chunk.js.map",
   "static/js/1.ca1cb434.chunk.js": "/react-deploy-test/static/js/1.ca1cb434.chunk.js",
   "static/js/1.ca1cb434.chunk.js.map": "/react-deploy-test/static/js/1.ca1cb434.chunk.js.map",
   "runtime~main.js": "/react-deploy-test/static/js/runtime~main.c98906c6.js",
   "runtime~main.js.map": "/react-deploy-test/static/js/runtime~main.c98906c6.js.map",
   "index.html": "/react-deploy-test/index.html",
-  "precache-manifest.0fb1d8a95edbfce0ae98732c1b28a995.js": "/react-deploy-test/precache-manifest.0fb1d8a95edbfce0ae98732c1b28a995.js",
+  "precache-manifest.2daccd4fb4027db9f04d60c771444215.js": "/react-deploy-test/precache-manifest.2daccd4fb4027db9f04d60c771444215.js",
   "service-worker.js": "/react-deploy-test/service-worker.js"
 }
