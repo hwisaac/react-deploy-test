@@ -1,9 +1,5 @@
-import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
-import Router from "./Router";
-import { darkTheme, lightTheme } from "./theme";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -70,26 +66,12 @@ a {
 }
 `;
 
-const ToggleBtn = styled.button`
-  background-color: ${(props) => props.theme.textColor};
-  color: ${(props) => props.theme.bgColor};
-  padding: 10px;
-  margin: 10px;
-  border-radius: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-`;
-
 function App() {
-  const [isDark, setIsDark] = useState(false);
-  const toggleDark = () => setIsDark((current) => !current);
-
   return (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-      <ToggleBtn onClick={toggleDark}>Toggle</ToggleBtn>
+    <>
       <GlobalStyle />
-      <Router />
-    </ThemeProvider>
+      <ToDoList />
+    </>
   );
 }
 
