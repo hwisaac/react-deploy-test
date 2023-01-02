@@ -1,23 +1,19 @@
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
-import Coin from "./routes/Coin";
-import Coins from "./routes/Coins";
-import App from "./App";
-import Header from "./routes/Header";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Tt from "./routes/Tt";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Routes/Home";
+import Layout from "./Routes/Layout";
+import Search from "./Routes/Search";
+import Tv from "./Routes/Tv";
 
 const Router = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path='/' element={<Coins />} />
-        <Route path='/:coinId/*' element={<Coin />} />
+        <Route path={"/"} element={<Layout />}>
+          <Route path={"/"} element={<Home />} />
+          <Route path='/tv' element={<Tv />} />
+          <Route path='/search' element={<Search />} />
+          <Route path={"/movies/:movieId"} element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
